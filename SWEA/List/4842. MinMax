@@ -1,0 +1,10 @@
+#1 test_case의 수 만큼 반복
+for test_T in range(int(input())) :
+	#2 사용하지는 않지만 양수의 갯수 N을 받음
+    n = int(input())
+    #3 N개의 양수를 List에 담는다. 
+    list_temp = list(map(int, input().split()))
+    #4 min()과 max()함수를 이용해 최대값과 최소값을 구한 뒤 결과 값을 변수에 담는다.
+    result = max(list_temp) - min(list_temp)
+    #5 출력
+    print('#{} {}'.format(test_T+1, result)) 
