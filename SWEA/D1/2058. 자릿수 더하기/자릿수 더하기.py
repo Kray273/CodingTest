@@ -5,5 +5,5 @@ lst = []
 #반복문을 이용 lst에 N변수의 문자열을 하나씩 꺼내 더한다. 
 for i in N :
     lst.append(int(i))
-#sum을 출력한다.
+#sum함수를 이용 lst를 출력한다.
 print(sum(lst))
