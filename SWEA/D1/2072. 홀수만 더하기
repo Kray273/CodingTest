@@ -1,0 +1,14 @@
+# 테스트 캐이스 갯수를 T에 담는다.     
+T = int(input())
+
+for test_case in range(1, T + 1):
+    # 홀수값만 저장할 sum변수를 초기화한다.
+    sum = 0
+    #홀수 값 검사를 진행할 데이터를 lis에 넣는다. 
+    lis = list(map(int, input().split()))
+    for i in lis :
+        # i번째의 값을 2로 나누었을 때의 나머지가 1이면 홀수 임으로 sum에 더한다.
+        if i % 2 == 1 :
+            sum += i
+    print("#{} {}".format(test_case, sum))
+    
